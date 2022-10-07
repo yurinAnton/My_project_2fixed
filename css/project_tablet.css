@@ -1,0 +1,136 @@
+@media (min-width: 641px) and (max-width: 1200px) {
+   /* HEADER */
+   .header {
+      width: 100%;
+      height: 450px;
+      padding: 15px 10px;
+      margin-bottom: 20px;
+      background-image: url("../img/banner-bg-tablet.jpg");
+   }
+   .header-content {
+      padding-bottom: 40px;
+   }
+   .title-block {
+      margin: 20px;
+      padding: 10px;
+   }
+   .header-menu {
+      position: relative;
+   }
+   .menu-links-container::before {
+      content: " ";
+      border-bottom: 4px solid white;
+      border-top: 4px solid white;
+      width: 40px;
+      height: 20px;
+      top: 0;
+      right: 40px;
+      position: absolute;
+   }
+   .menu-links-container::after {
+      content: " ";
+      border-bottom: 4px solid white;
+      width: 40px;
+      top: 12px;
+      right: 40px;
+      position: absolute;
+   }
+   .menu-links-item {
+      visibility: hidden;
+   }
+   .main-title {
+      margin: 0;
+      font-size: 2.5rem;
+   }
+
+   /* TRAND ARTICLE */
+   .trands-article {
+      height: 600px;
+   }
+   .trands-title {
+      font-size: 1.2rem;
+   }
+   .trand-container {
+      margin-top: 2px;
+      width: calc(50% - 2px);
+      height: 250px;
+   }
+   .trands-link {
+      font-size: 1rem;
+      margin-right: 8px;
+   }
+   .trand-value-text {
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+   }
+
+   /* MAIN CONTAINER */
+   .main-content {
+      margin-top: 30px;
+      padding: 0;
+   }
+
+   .article-news {
+      padding: 0;
+      margin: 60px auto;
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .news-section {
+      height: 550px;
+      margin: 70px 0;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .img-news {
+      width: 100%;
+   }
+   .news-container {
+      margin-top: 20px;
+      width: 100%;
+   }
+   .side-bar {
+      padding: 0;
+      margin: 30px auto;
+      width: 500px;
+   }
+
+   /* SHOP ARTICLE */
+
+   .shop-article {
+      margin: 40px 20px;
+      display: flex;
+      justify-content: flex-start;
+   }
+   .shop-title {
+      width: 100%;
+      height: 50px;
+   }
+   .shop-title-item {
+      font-size: 1.2rem;
+   }
+
+   .shop-item {
+      padding: 2px;
+      margin-left: 0;
+      width: 45%;
+   }
+   .shop-item-img {
+      width: 80%;
+      height: 250px;
+   }
+   .pillows-sofa {
+      background-image: url("../img/shop-item-mobile1.jpg");
+   }
+   .bunny-dole {
+      background-image: url("../img/shop-item-tablet2.jpg");
+   }
+   .hexagon-frame {
+      background-image: url("../img/shop-item-tablet3.jpg");
+   }
+   .shop-item-title {
+      font-size: 1.2rem;
+   }
+}

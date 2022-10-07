@@ -1,0 +1,372 @@
+* {
+  margin: 0 auto;
+}
+a:link {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+}
+
+.logo-img {
+  margin-left: 0;
+  width: 180px;
+}
+.header {
+  width: 100%;
+  height: 450px;
+  padding: 35px 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  position: relative;
+  z-index: 0;
+}
+.header:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+.header-content {
+  padding: 15px;
+  height: 450px;
+  width: 1200px;
+  display: block;
+  box-sizing: border-box;
+}
+.menu {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-items {
+  margin-right: 0;
+  display: block;
+  box-sizing: border-box;
+}
+.menu-link {
+  font-family: "OpenSans-Regular";
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu-link:before {
+  content: "";
+  margin-left: 35px;
+}
+.menu-link:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-family: "OpenSans-Bold";
+  color: #ffffff;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.main-header {
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 150px 350px;
+  text-align: center;
+  vertical-align: midle;
+}
+
+/* mAIN CONTAINER */
+
+.main-content {
+  padding: 30px 15px;
+  width: 1200px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.news-section {
+  padding: 2px;
+  margin: 30px 30px 60px 0px;
+  display: flex;
+  height: 290px;
+  width: 770px;
+  box-sizing: border-box;
+}
+.img-news {
+  margin-left: 0;
+  background-size: cover;
+  height: 100%;
+  width: 380px;
+}
+.img-news img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 0;
+  height: 100%;
+  max-width: 360px;
+}
+
+/* выровнить ссылки */
+.news-link {
+  display: flex;
+  justify-content: start;
+}
+
+.news-link a {
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b59f5b;
+}
+.news-link a:hover {
+  text-decoration: underline;
+}
+.news-link a:after {
+  content: "";
+  margin-right: 20px;
+}
+#head-link {
+  font-family: "OpenSans-Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+#head-link:hover {
+  color: #b59f5b;
+}
+.author {
+  margin: 30px 0 0 0;
+  font-family: "OpenSans-Bold";
+  font-size: 12px;
+}
+#update-data {
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  color: #888888;
+}
+#update-data:after {
+  content: "";
+  margin-right: 15px;
+}
+.text {
+  margin: 50px 0 70px 0;
+  font-family: "OpenSans-Regular";
+  font-size: 15px;
+  color: #0f0d0e;
+}
+
+/* SIDEBAR */
+
+.side-bar {
+  margin: 30px 5px 30px 110px;
+  width: 270px;
+  display: block;
+}
+.newposts-container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+#aside-link {
+  width: 100%;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#aside-link:hover {
+  color: #b59f5b;
+}
+#aside-link:after {
+  margin: 0 auto;
+  padding: 5px 0;
+  content: "";
+  display: block;
+  width: 66px;
+  border-bottom: 4px solid #b59f5b;
+}
+.aside-newpost {
+  position: relative;
+  margin: 30px 0;
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+}
+.img-newpost {
+  position: absolute;
+  margin-left: 0;
+  margin-right: 5px;
+  height: 100%;
+  width: 70px;
+}
+.img-newpost img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newpost-contain {
+  position: absolute;
+  margin-left: 80px;
+}
+.sidebar-data {
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  color: #888888;
+  white-space: nowrap;
+}
+.newposts-container h4 {
+  text-transform: uppercase;
+  font-family: "OpenSans-Bold";
+  color: #000000;
+  font-size: 14px;
+}
+.search-form {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 60px 0;
+  height: 46px;
+}
+.search-field {
+  background-color: #f4f7f6;
+  border: none;
+  box-sizing: border-box;
+  width: 80%;
+}
+.btn-search {
+  border: none;
+  background-color: #b59f5b;
+  color: white;
+  width: 20%;
+}
+.btn-search-img {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/* Mailing-container */
+.mailing-container {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0;
+  padding: 15px 0;
+  width: 100%;
+}
+.email-form {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+  height: 46px;
+}
+.email-field {
+  background-color: #f4f7f6;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+}
+.btn-subscribe {
+  border: none;
+  background-color: #b59f5b;
+  text-transform: uppercase;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  color: white;
+  margin-top: 18px;
+  width: 100%;
+  height: 45px;
+}
+
+
+/* Tags-container  */
+.tags-container {
+  margin-top: 70px;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.tags_items-container {
+  width: 100%;
+  margin-top: 20px;
+}
+.tag-item {
+  font-family: "OpenSans-Bold";
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 2px;
+  padding: 3px 8px;
+  border: 4px solid #f4f3f1;
+  display: inline-block;
+}
+#tags-link {
+  color: black;
+}
+.tag-item:hover {
+  border: 4px solid #ae9e5f;
+}
+
+
+
+/* Topics-container  */
+#aside-link {
+  margin-bottom: 20px;
+}
+.topics-container {
+  margin: 45px 0;
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.topik_link-container {
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  height: 47px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0, 0.3);
+  text-align: left;
+}
+.topic-link {
+  color: black;
+}
+
+
+
+
+/* Footer */
+
+.footer-container {
+  height: 80px;
+  width: 1180px;
+  background-color: #f4f7f6;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
